@@ -1,8 +1,8 @@
-import * as types from './mutation-types.js'
+import * as types from './mutation-types.js';
 
 export default {
   init ({commit}) {
-    commit(types.INIT)
+    commit(types.INIT);
   },
   hideDrawer({state}) {
     if (false === state.init) {
@@ -14,6 +14,6 @@ export default {
     }
 
     // Drawer閉じる
-    state.elMdl.MaterialLayout.toggleDrawer()
+    state.elMdl.MaterialLayout.toggleDrawer();
   }
 }

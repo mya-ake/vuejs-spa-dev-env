@@ -83,13 +83,13 @@ export default {
       email: '',
       password: '',
       message: ''
-    }
+    };
   },
   methods: {
     signIn: function() {
-    this.message = ''
+      this.message = '';
       if (this.email && this.password) {
-        this.message = 'success'
+        this.message = 'success';
       }
     }
   }

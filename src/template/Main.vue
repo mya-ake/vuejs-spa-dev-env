@@ -39,12 +39,10 @@ export default {
   data () {
     return {
       isShowMain: true,
-    }
-  },
-  methods: {
+    };
   },
   mounted: function() {
-    this.$store.dispatch('init')
+    this.$store.dispatch('init');
   }
 }
 </script>

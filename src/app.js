@@ -1,3 +1,3 @@
-require('./js/controller.js')
+require('./js/controller.js');
 
-require('material-design-lite')
+require('material-design-lite');

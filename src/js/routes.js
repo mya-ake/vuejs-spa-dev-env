@@ -1,7 +1,7 @@
-import About from './../template/pages/About.vue'
-import MDLSamples from './../template/pages/MDLSamples.vue'
-import Libraries from './../template/pages/Libraries.vue'
-import Credit from './../template/pages/Credit.vue'
+import About from './../template/pages/About.vue';
+import MDLSamples from './../template/pages/MDLSamples.vue';
+import Libraries from './../template/pages/Libraries.vue';
+import Credit from './../template/pages/Credit.vue';
 
 // SPAのルーティングを書くファイル
 
@@ -31,4 +31,4 @@ export default [
     path: '*',
     component: About
   }
-]
+];
