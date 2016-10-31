@@ -38,9 +38,6 @@ var gulpSass = function(callback) {
   task.on('end', callback);
 };
 
-
-// gulp.task('default', ['browser-sync']);
-
 /** browser sync */
 gulp.task('browser-sync', function() {
   browserSync({
@@ -81,7 +78,7 @@ gulp.task('scss-sync', function() {
 /** default & watch */
 gulp.task('default', ['browser-sync'], function () {
     gulp.watch(PATHS.input + '/scss/**/*.scss',     ['scss-sync']);           // sass
-    gulp.watch(PATHS.input + '/js/**/*.js',            ['webpack:build-sync']);  // js
+    gulp.watch(PATHS.input + '/js/**/*.js',         ['webpack:build-sync']);  // js
     gulp.watch(PATHS.output + '/*.html',            ['bs-reload']);           // html
     gulp.watch(PATHS.input + '/template/**/*.vue',  ['webpack:build-sync']);  // vue template
 });

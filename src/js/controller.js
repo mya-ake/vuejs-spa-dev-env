@@ -24,7 +24,7 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   // 遷移前
   next();  // この関数呼ぶと次に遷移（beforeEach使うときは必須）
-})
+});
 router.afterEach((to, from) => {
   // 遷移後
   store.dispatch('hideDrawer');
