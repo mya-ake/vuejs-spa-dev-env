@@ -1,0 +1,25 @@
+/* メディアクエリーを使うスタイル */
+
+@media (min-width: 840px) {
+  .my-mdl-tabs {
+    .mdl-cell {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 839px) and (min-width: 480px) {
+  .my-mdl-tabs {
+    .mdl-cell {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .my-mdl-tabs {
+    .mdl-cell {
+      margin: 0;
+    }
+  }
+}

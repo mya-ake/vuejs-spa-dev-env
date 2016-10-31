@@ -1,0 +1,29 @@
+/* 基本的なスタイル */
+
+.page-content {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mdl-navigation__link {
+  font-size: 16px;
+}
+
+.mdl-list__item-avatar.material-icons {
+  padding: 2px;
+  color: #757575;
+  background-color: transparent;
+  font-size: 36px;
+  &[data-type="cloud"] {
+    padding: 5px;
+    font-size: 30px;
+  }
+}
+
+.mdl-list__item {
+  .mdl-list__item-secondary-content {
+    align-items: center;
+  }
+}
