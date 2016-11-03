@@ -7,6 +7,7 @@
         <div class="mdl-layout-spacer"></div>
         <nav class="mdl-navigation mdl-layout--large-screen-only">
           <router-link to="/about" class="mdl-navigation__link">About</router-link>
+          <router-link to="/api-sample" class="mdl-navigation__link">API Sample</router-link>
           <router-link to="/mdl-samples" class="mdl-navigation__link">MDL Samples</router-link>
           <router-link to="/libraries" class="mdl-navigation__link">Libraries</router-link>
           <router-link to="/credit" class="mdl-navigation__link">Credit</router-link>
@@ -18,6 +19,7 @@
       <span class="mdl-layout-title">Vue.js SPA</span>
       <nav class="mdl-navigation">
         <router-link to="/about" class="mdl-navigation__link">About</router-link>
+        <router-link to="/api-sample" class="mdl-navigation__link">API Sample</router-link>
         <router-link to="/mdl-samples" class="mdl-navigation__link">MDL Samples</router-link>
         <router-link to="/libraries" class="mdl-navigation__link">Libraries</router-link>
         <router-link to="/credit" class="mdl-navigation__link">Credit</router-link>
@@ -41,7 +43,7 @@ export default {
       isShowMain: true,
     };
   },
-  mounted: function() {
+  mounted () {
     this.$store.dispatch('init');
   }
 }

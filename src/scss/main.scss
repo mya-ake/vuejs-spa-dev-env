@@ -43,3 +43,26 @@
     align-items: center;
   }
 }
+
+.qiita-card {
+  .mdl-card__title {
+    align-items: flex-start;
+    flex-direction: column;
+    h4 {
+      margin-top: 0;
+    }
+  }
+  .qiita-card__sub-info {
+    width: 100%;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .qiita-card__tags {
+    padding: 16px;
+    .mdl-chip {
+      margin-right: 8px;
+    }
+  }
+}
