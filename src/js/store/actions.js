@@ -15,5 +15,11 @@ export default {
 
     // Drawer閉じる
     state.elMdl.MaterialLayout.toggleDrawer();
+  },
+  transitionScroll({commit}, position) {
+    commit(types.TRANSITION_SCROLL, position);
+  },
+  setBeforeMainPosition({commit}, position) {
+    commit(types.MAIN_POSITION, position);
   }
-}
+};

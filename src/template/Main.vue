@@ -52,8 +52,6 @@ export default {
 .fade-enter-active {
   width: 100%;
   transition: opacity .5s;
-  position: absolute;
-  z-index: 1;
 }
 .fade-leave-active {
   transition: opacity .3s;

@@ -1,1 +1,3 @@
 export const INIT = 'INIT';
+export const TRANSITION_SCROLL = 'TRANSITION_SCROLL';
+export const MAIN_POSITION = 'MAIN_POSITION';
