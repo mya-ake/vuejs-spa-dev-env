@@ -8,6 +8,8 @@ import mutations from './store/mutations.js';
 Vue.use(VueResource);
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.config.devtools = false;    // ConsoleにDev Toolのテキストを表示しない
+
 
 /** Vuexのストア生成 **/
 const store = new Vuex.Store({
