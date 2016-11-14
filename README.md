@@ -1,7 +1,7 @@
 # vuejs-spa-dev-env
 Vue.jsでSPA(Single Page Application)作るための開発環境的なやつ。
 
-[DEMO](https://mya-ake.com/sample/vuejs-spa)
+[DEMO](https://mya-ake.com/samples/vuejs-spa)
 
 とりあえずbuildして起動するまで書いておきます。詳細は徐々に。
 
