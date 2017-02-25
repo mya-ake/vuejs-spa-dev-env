@@ -34,10 +34,10 @@ Google Chromeが立ち上がってサイトが表示されます。
 JavaScriptはWebpackで、CSSはGulpで管理してます。
 
 ### 使ってるいろんなもの
-* Vue.js 2.0
-* vue resource 1.0
-* vue router 2.0
-* Vuex 2.0
+* Vue.js 2.1
+* vue resource 1.2
+* vue router 2.2
+* Vuex 2.1
 * MDL
 * Gulp
 * Webpack 2
