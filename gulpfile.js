@@ -28,7 +28,9 @@ var webpackBuild = function (callback) {
 
 var gulpSass = function (callback) {
   var processors = [
-    autoprefixer({ browsers: ['last 2 version'] }),
+    autoprefixer({
+      browsers: ['IE 9', 'IE 10', 'IE 11', 'last 2 versions']
+    }),
     cssnano(),
   ];
   var task = gulp.src(PATHS.input + '/scss/styles.scss')
