@@ -11,36 +11,32 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.js'],
     alias: {
-      'vue': 'vue/dist/vue',
-      'vue-resource': 'vue-resource/dist/vue-resource'
-    }
+      'vue$': 'vue/dist/vue.common.js',
+    },
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: [
-          'babel'
+        use: [
+          'babel-loader'
         ]
       },
       {
         test: /\.vue$/,
-        loader: 'vue',
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            postcss: 'vue-style-loader!css-loader!postcss-loader!sass-loader',
+          },
+        },
       }
-
     ]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
-    new webpack.ProvidePlugin({
-      Vue: 'vue',
-      VueResource: 'vue-resource',
-      VueRouter: 'vue-router',
-      Vuex: 'vuex'
-    })
   ],
   devtool: 'source-map'
 };

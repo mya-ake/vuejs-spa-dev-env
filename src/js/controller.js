@@ -1,3 +1,7 @@
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Vuex from 'vuex';
+import VueResource from 'vue-resource';
 import routes from './routes.js';
 import Main from './../template/Main.vue';
 import state from './store/states.js';
