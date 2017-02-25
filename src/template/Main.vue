@@ -48,11 +48,11 @@ export default {
   }
 }
 </script>
-
-<style>
+<style lang="sass">
+$w-content: 100%;
 
 .fade-enter-active {
-  width: 100%;
+  width: $w-content;
   transition: opacity .5s;
 }
 .fade-leave-active {
