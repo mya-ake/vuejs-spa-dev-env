@@ -7,22 +7,23 @@ Vue.jsでSPA(Single Page Application)作るための開発環境的なやつ。
 
 ## Build
 
-### step 1
-
-    npm install
-
-or
+### install
 
     yarn
 
-### step 2
+or
 
-    gulp build
+    npm install
 
 
-### step 3
+### build
 
-    gulp
+    yarn build
+
+
+### development
+
+    yarn start
 
 Google Chromeが立ち上がってサイトが表示されます。
 この状態でsrc内のファイルに変更があると自動でブラウザが更新されます。
@@ -39,11 +40,11 @@ JavaScriptはWebpackで、CSSはGulpで管理してます。
 * Vuex 2.0
 * MDL
 * Gulp
-* Webpack
+* Webpack 2
 * Babel
 * Sass
 * cssnext
-* Browser Sync
+* Browsersync
 
 ※VuexはVueのFlux的なやつですがわかりやすさのために全てをFlux的に書いてるわけじゃないです。
 
@@ -56,7 +57,7 @@ Twitter:https://twitter.com/mya_ake
 
 ## Version
 
-1.1.0 (Novenber 3, 2016)
+1.2.0 (February 25, 2017)
 
 ## License
 The MIT License (MIT)

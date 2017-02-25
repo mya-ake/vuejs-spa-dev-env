@@ -34,9 +34,34 @@ module.exports = {
         },
       }
     ]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-  ],
-  devtool: 'source-map'
+  }
 };
+
+switch (process.env.NODE_ENV) {
+  case 'development': {
+    module.exports.devtool = '#eval-source-map';
+    break;
+  }
+  case 'production': {
+    module.exports.devtool = '#source-map';
+    module.exports.plugins = (module.exports.plugins || []).concat([
+      new webpack.DefinePlugin({
+        'process.env': {
+          NODE_ENV: '"production"',
+        },
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        sourceMap: true,
+        compress: {
+          warnings: false,
+        },
+      }),
+      new webpack.LoaderOptionsPlugin({
+        minimize: true,
+      }),
+    ]);
+    break;
+  }
+  default:
+    break;
+}
