@@ -50,7 +50,6 @@ gulp.task('browser-sync', function () {
       index: "index.html",       //インデックスファイル
       middleware: [historyApiFallback()]
     },
-    browser: ["google chrome"]    // 起動時に開くブラウザ
   });
 });
 
